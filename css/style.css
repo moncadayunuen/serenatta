@@ -1,0 +1,705 @@
+.title {
+  width: 100%;
+  padding: 5px 10px;
+  border-left: 5px solid #CE1B5D;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+.btn {
+  width: max-content;
+  height: max-content;
+  padding: 5px;
+  display: block;
+  border: none;
+  border-radius: 3px;
+  margin: 0 5px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.btn-signup, .btn-login {
+  background: transparent;
+  padding: 7px 10px;
+  color: #A58B5F;
+  font-weight: bold;
+  border: 1px solid #FA9F42;
+}
+.btn-signup:hover, .btn-login:hover {
+  background: #FA9F42;
+  color: #ffffff;
+  border: 1px solid #FA9F42;
+}
+
+.plus-minus {
+  background: transparent;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.7rem;
+  padding: 0 7px;
+  display: block;
+}
+.plus-minus:hover {
+  color: #FA9F42;
+}
+
+.btn-hire {
+  background: #32B57C;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 25px;
+  border: 1px solid #397939;
+  box-shadow: inset 0 1px 0 #a3e6a3;
+}
+.btn-hire:hover {
+  background: #1E9E64;
+}
+
+.btn-comments {
+  width: max-content;
+  border: none;
+  background: none;
+  padding: 5px 15px;
+  color: #A58B5F;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.btn-comments:hover {
+  color: #CE1B5D;
+}
+
+.btn-comments i {
+  font-size: 1.2rem;
+  padding: 0 8px;
+}
+
+.btn-pink {
+  color: #ffffff;
+  font-size: 1.3rem;
+  padding: 7px 15px;
+  border: 2px solid #CE1B5D;
+  transition: 0.3s ease-in-out;
+}
+.btn-pink:hover {
+  background: #ffffff;
+  color: #CE1B5D;
+  border: 2px solid #CE1B5D;
+}
+
+.btn-pink i {
+  margin: 0 10px;
+}
+
+.main-menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #242424;
+  padding: 10px 15px;
+}
+
+.box-btn-header {
+  display: flex;
+}
+
+.logo {
+  width: 250px;
+  padding: 5px 10px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 180px;
+  }
+}
+@media (max-width: 480px) {
+  .logo {
+    width: 150px;
+  }
+}
+@media (max-width: 380px) {
+  .logo {
+    width: 120px;
+  }
+}
+header {
+  width: 100%;
+  height: 500px;
+  background-image: url("../../assets/images/img_header.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-event {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px 10px;
+  border-bottom: 3px solid #CE1B5D;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.content-event {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 30px;
+  justify-content: center;
+}
+
+.numbers-stars {
+  font-size: 1.5rem;
+  color: #ffffff;
+  list-style: none;
+  display: flex;
+  padding: 5px 0;
+}
+
+.numbers-stars li {
+  list-style: none;
+  margin: 0 5px 0 0;
+}
+
+.description-event {
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.form-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.hours {
+  width: max-content;
+  height: auto;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background: #ffffff;
+  border-radius: 3px;
+  color: #242424;
+}
+
+.form-menu label {
+  color: #ffffff;
+  padding: 0 5px;
+}
+
+.form-menu input[type=text], .form-menu select {
+  color: #000000;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 3px;
+  border: none;
+  padding: 5px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+@media (max-width: 960px) {
+  .box-event {
+    flex-direction: column;
+  }
+
+  .box-btn-hire {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+  header {
+    height: 520px;
+  }
+}
+@media (max-width: 768px) {
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    height: 550px;
+  }
+}
+.ui-timepicker-container {
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.ui-timepicker, .ui-timepicker-viewport {
+  box-sizing: content-box;
+  height: 205px;
+  display: block;
+  margin: 0;
+}
+
+.ui-timepicker {
+  list-style: none;
+  padding: 0 1px;
+  text-align: center;
+}
+
+.ui-timepicker-viewport {
+  padding: 0;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.ui-timepicker-standard {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #CE1B5D;
+  color: #000000;
+  margin: 0;
+}
+
+.ui-timepicker-standard a {
+  columns: transparent;
+  display: block;
+  padding: 0.2em 0.4em;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.ui-timepicker-standard .ui-state-hover {
+  background-color: #CE1B5D;
+  color: #ffffff;
+}
+
+.ui-timepicker-standard .ui-menu-item {
+  margin: 0;
+  padding: 0;
+}
+
+.ui-timepicker-corners, .ui-timepicker-corners .ui-corner-all {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.ui-timepicker-hidden {
+  display: none;
+}
+
+.ui-timepicker-no-scrollbar .ui-timepicker {
+  border: none;
+}
+
+.datepicker-container {
+  background-color: #fff;
+  direction: ltr;
+  font-size: 12px;
+  left: 0;
+  line-height: 30px;
+  position: fixed;
+  -webkit-tap-highlight-color: transparent;
+  top: 0;
+  -ms-touch-action: none;
+  touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 210px;
+  z-index: -1;
+}
+
+.datepicker-container::before,
+.datepicker-container::after {
+  border: 5px solid transparent;
+  content: " ";
+  display: block;
+  height: 0;
+  position: absolute;
+  width: 0;
+}
+
+.datepicker-dropdown {
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0 3px 6px #ccc;
+  box-shadow: 0 3px 6px #ccc;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  position: absolute;
+  z-index: 1;
+}
+
+.datepicker-inline {
+  position: static;
+}
+
+.datepicker-top-left,
+.datepicker-top-right {
+  border-top-color: #39f;
+}
+
+.datepicker-top-left::before,
+.datepicker-top-left::after,
+.datepicker-top-right::before,
+.datepicker-top-right::after {
+  border-top: 0;
+  left: 10px;
+  top: -5px;
+}
+
+.datepicker-top-left::before,
+.datepicker-top-right::before {
+  border-bottom-color: #39f;
+}
+
+.datepicker-top-left::after,
+.datepicker-top-right::after {
+  border-bottom-color: #fff;
+  top: -4px;
+}
+
+.datepicker-bottom-left,
+.datepicker-bottom-right {
+  border-bottom-color: #39f;
+}
+
+.datepicker-bottom-left::before,
+.datepicker-bottom-left::after,
+.datepicker-bottom-right::before,
+.datepicker-bottom-right::after {
+  border-bottom: 0;
+  bottom: -5px;
+  left: 10px;
+}
+
+.datepicker-bottom-left::before,
+.datepicker-bottom-right::before {
+  border-top-color: #39f;
+}
+
+.datepicker-bottom-left::after,
+.datepicker-bottom-right::after {
+  border-top-color: #fff;
+  bottom: -4px;
+}
+
+.datepicker-top-right::before,
+.datepicker-top-right::after,
+.datepicker-bottom-right::before,
+.datepicker-bottom-right::after {
+  left: auto;
+  right: 10px;
+}
+
+.datepicker-panel > ul {
+  margin: 0;
+  padding: 0;
+  width: 102%;
+}
+
+.datepicker-panel > ul::before,
+.datepicker-panel > ul::after {
+  content: " ";
+  display: table;
+}
+
+.datepicker-panel > ul::after {
+  clear: both;
+}
+
+.datepicker-panel > ul > li {
+  background-color: #fff;
+  cursor: pointer;
+  float: left;
+  height: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 30px;
+}
+
+.datepicker-panel > ul > li:hover {
+  background-color: #CE1B5D;
+  color: #ffffff;
+}
+
+.datepicker-panel > ul > li.muted,
+.datepicker-panel > ul > li.muted:hover {
+  color: #999;
+}
+
+.datepicker-panel > ul > li.highlighted {
+  background-color: #e5f2ff;
+}
+
+.datepicker-panel > ul > li.highlighted:hover {
+  background-color: #cce5ff;
+}
+
+.datepicker-panel > ul > li.picked,
+.datepicker-panel > ul > li.picked:hover {
+  color: #ffffff;
+  background: #CE1B5D;
+}
+
+.datepicker-panel > ul > li.disabled,
+.datepicker-panel > ul > li.disabled:hover {
+  background-color: #fff;
+  color: #ccc;
+  cursor: default;
+}
+
+.datepicker-panel > ul > li.disabled.highlighted,
+.datepicker-panel > ul > li.disabled:hover.highlighted {
+  background-color: #e5f2ff;
+}
+
+.datepicker-panel > ul > li[data-view="years prev"],
+.datepicker-panel > ul > li[data-view="year prev"],
+.datepicker-panel > ul > li[data-view="month prev"],
+.datepicker-panel > ul > li[data-view="years next"],
+.datepicker-panel > ul > li[data-view="year next"],
+.datepicker-panel > ul > li[data-view="month next"],
+.datepicker-panel > ul > li[data-view=next] {
+  font-size: 18px;
+}
+
+.datepicker-panel > ul > li[data-view="years current"],
+.datepicker-panel > ul > li[data-view="year current"],
+.datepicker-panel > ul > li[data-view="month current"] {
+  width: 150px;
+}
+
+.datepicker-panel > ul[data-view=years] > li,
+.datepicker-panel > ul[data-view=months] > li {
+  height: 52.5px;
+  line-height: 52.5px;
+  width: 52.5px;
+}
+
+.datepicker-panel > ul[data-view=week] > li,
+.datepicker-panel > ul[data-view=week] > li:hover {
+  background-color: #CE1B5D;
+  color: #ffffff;
+  cursor: default;
+}
+
+.datepicker-hide {
+  display: none;
+}
+
+.content-band {
+  width: 100%;
+  padding: 15px 0;
+  background: #000000;
+}
+
+.plugin-spotify {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.plugin-spotify iframe {
+  width: 40%;
+  height: 380px;
+}
+
+.box-btn-band {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 20px 0;
+}
+
+@media (max-width: 768px) {
+  .plugin-spotify iframe {
+    width: 60%;
+  }
+}
+.comments {
+  width: 100%;
+  height: auto;
+  background: #1B1B1B;
+  padding: 20px 0;
+}
+
+.comment {
+  display: flex;
+  padding: 10px 60px;
+  margin: 5px 0;
+}
+
+.box-user, .box-user img {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.box-info-user {
+  width: 100%;
+  color: #ffffff;
+}
+
+.name-user {
+  display: flex;
+  align-items: center;
+}
+
+.name-user h4 {
+  color: #A58B5F;
+  padding: 0 8px;
+}
+
+.name-user a {
+  text-decoration: none;
+}
+
+.box-btn-comments {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.description-comment {
+  padding: 5px 10px;
+}
+
+.circle-pink {
+  width: 6px;
+  height: 6px;
+  margin: 0 5px;
+  background: #CE1B5D;
+  border-radius: 12px;
+}
+
+footer {
+  padding: 5px 10px;
+  background: #000000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-footer {
+  width: 100px;
+  margin: 10px 0;
+}
+
+.menu-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-footer li {
+  list-style: none;
+  border-right: 2px solid #ffffff;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+.menu-footer li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  margin: 0 5px;
+  padding: 0 10px;
+  transition: 0.3s;
+}
+.menu-footer li a:hover {
+  color: #CE1B5D;
+}
+
+.social-media {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media li {
+  list-style: none;
+  font-size: 2rem;
+}
+
+.social-media li i {
+  text-decoration: none;
+  margin: 0 5px;
+  color: #ffffff;
+  transition: 0.5s ease-in-out;
+}
+.social-media li i:hover {
+  color: #A58B5F;
+  transform: rotate(360deg);
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+@media (max-width: 960px) {
+  .menu-footer {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+
+  .menu-footer li {
+    border-right: 0 solid #ffffff;
+  }
+}
+@media (max-width: 768px) {
+  .menu-footer {
+    flex-direction: column;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: "./fonts/SourceSansPro-Regular.ttf";
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,24 @@
+@import 'partials/settings';
+@import 'partials/buttons';
+@import 'partials/menu';
+@import 'partials/header';
+@import 'partials/timepicker';
+@import 'partials/datepicker';
+@import 'partials/band';
+@import 'partials/comments';
+@import 'partials/footer';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: './fonts/SourceSansPro-Regular.ttf';
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}

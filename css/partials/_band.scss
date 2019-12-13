@@ -1,0 +1,27 @@
+.content-band {
+    width: 100%;
+    padding: 15px 0;
+    background: $black;
+}
+.plugin-spotify {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.plugin-spotify iframe {
+    width: 40%;
+    height: 380px;
+}
+.box-btn-band{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 20px 0;
+}
+@media(max-width: 768px) {
+    .plugin-spotify iframe {
+        width: 60%;
+    }
+}

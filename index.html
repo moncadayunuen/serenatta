@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Serenatta</title>
+    <script src="https://kit.fontawesome.com/9fa0f078e1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" async defer></script>
+    <script src="./node_modules/@chenfengyuan/datepicker/dist/datepicker.min.js" async defer></script>
+    <script src="./js/jquery.timepicker.js" async defer></script>
+    <script src="./js/app.js" async defer></script>
+    <script src="./carouselengine/jquery.js"></script>
+    <script src="./carouselengine/amazingcarousel.js"></script>
+    <link rel="stylesheet" type="text/css" href="./carouselengine/initcarousel-1.css">
+    <script src="./carouselengine/initcarousel-1.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./assets/images/favicon.png" type="image/png" sizes="32x32">
+</head>
+<body>
+    <nav class="main-menu">
+        <a href="#"><img src="./assets/images/serenatta_logo.png" class="logo" alt="logo-page"></a>
+        <div class="box-btn-header">
+            <button class="btn btn-signup">Registro</button>
+            <button class="btn btn-login">Ingreso</button>
+        </div>
+    </nav>
+    <header>
+       <div class="box-event">
+            <form class="form-menu" autocomplete="off">
+                <div class="form-group">
+                    <div class="form-input">
+                        <label id="date-show">Fecha del evento:</label>
+                        <input type="text" placeholder="Elige una fecha" name="dateShow" id="date-show" data-toggle="datepicker">
+                    </div>
+                    <div class="form-input">
+                        <label id="time-show">Hora:</label>
+                        <input type="text" placeholder="Selecciona una horario" class="timepicker" name="time" id="time-show">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-input">
+                        <label id="hours">Duración:</label>
+                        <div class="d-flex">
+                            <button class="btn plus-minus">-</button>
+                            <div class="hours">1h</div>
+                            <button class="btn plus-minus">+</button>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label>Tipo de servicio</label>
+                        <select name="styles-band">
+                            <option value="1">Mini-Mariachi</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+            <div class="box-btn-hire">
+                <button class="btn btn-hire">Contratar por: $1000</button>
+            </div>
+       </div>
+       <div class="content-event">
+           <h1>Chuchita La Bolsearon</h1>
+           <ul class="numbers-stars">
+               <li><i class="fas fa-star"></i></li>
+               <li><i class="fas fa-star"></i></li>
+               <li><i class="fas fa-star"></i></li>
+               <li><i class="fas fa-star"></i></li>
+               <li><i class="fas fa-star"></i></li>
+           </ul>
+           <div class="description-event">
+               <p>"A Chuchita la bolsearon", tradicional frase del folklor mexicano que representa fielmente el estilo musical inesperado y desfachatado de Chuchita<br>Género: <br> Integrantes: <br> Zona de alcance: </p>
+           </div>
+       </div>
+    </header>
+
+    <section class="content-band">
+        <div class="title">
+            <h2>Así tocamos</h2>
+        </div>
+        <div id="amazingcarousel-container-1">
+            <div id="amazingcarousel-1" style="display:none;position:relative;width:100%;max-width:720px;margin:0px auto 0px;">
+                <div class="amazingcarousel-list-container">
+                    <ul class="amazingcarousel-list">
+                        <li class="amazingcarousel-item">
+                            <div class="amazingcarousel-item-container">
+                            <div class="amazingcarousel-image"><a href="https://www.youtube.com/embed/55lvEyGcOus" title="Audio library - 1	"  class="html5lightbox" data-group="amazingcarousel-1"><img src="images/55lvEyGcOus.jpg"  alt="Audio library - 1	" /></a></div>
+                            <div class="amazingcarousel-title">Audio library - 1	</div>                    </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="amazingcarousel-item-container">
+                            <div class="amazingcarousel-image"><a href="https://www.youtube.com/embed/nNaO-8etjqs" title="Audio library - 2"  class="html5lightbox" data-group="amazingcarousel-1"><img src="images/nNaO-8etjqs.jpg"  alt="Audio library - 2" /></a></div>
+                            <div class="amazingcarousel-title">Audio library - 2</div>                    </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="amazingcarousel-item-container">
+                                <div class="amazingcarousel-image">
+                                    <a href="https://www.youtube.com/embed/opYAyx1Humc" title="Audio library - 3"  class="html5lightbox" data-group="amazingcarousel-1"><img src="images/opYAyx1Humc.jpg"  alt="Audo library - 3" /></a>
+                                </div>
+                                <div class="amazingcarousel-title">Audio library - 3</div>                    
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="amazingcarousel-item-container">
+                            <div class="amazingcarousel-image"><a href="https://www.youtube.com/embed/Srqs4CitU2U" title="Audio library - 4"  class="html5lightbox" data-group="amazingcarousel-1"><img src="images/Srqs4CitU2U.jpg"  alt="Audio library - 4" /></a></div>
+                            <div class="amazingcarousel-title">Audio library - 4</div>                    </div>
+                        </li>
+                    </ul>
+                    <div class="amazingcarousel-prev"></div>
+                    <div class="amazingcarousel-next"></div>
+                </div>
+            </div>
+        </div>
+        <div class="plugin-spotify">
+            <iframe src="https://open.spotify.com/embed/album/4yb8WnA9HzE76trAehsTT1" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="box-btn-band">
+            <a class="btn btn-pink"><i class="fas fa-chevron-left"></i>Regresar a buscar músicos</a>
+        </div>
+    </section>
+
+    <section class="comments">
+        <div class="title">
+            <h2>Opiniones de clientes que ya los contrataron</h2>
+        </div>
+        <div class="comment">
+            <div class="box-user">
+                <a href="#"><img src="./assets/images/user.png" width="100%"  alt="user"></a>
+            </div>
+            <div class="box-info-user">
+                <div class="name-user">
+                    <a href="#"><h4>Filemón Contreras</h4></a>
+                    <div class="circle-pink"></div>
+                    <p>Hace 1 día</p>
+                </div>
+                <p class="description-comment">Me encantó este mariachi, lo recomiendo ampliamente, precio accesible y calidad asegurada. La potencia de su sonido es más que
+                        suficiente, la coordinación de los músicos es muy buena y se nota su experiencia de años tocado juntos…
+                </p>
+                <div class="box-btn-comments">
+                    <button class="btn-comments"><i class="fas fa-chevron-down"></i>Leer completo</button>
+                </div>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="box-user">
+                <a href="#"><img src="./assets/images/user.png" width="100%"  alt="user"></a>
+            </div>
+            <div class="box-info-user">
+                <div class="name-user">
+                    <h4>Filemón Contreras</h4>
+                    <div class="circle-pink"></div>
+                    <p>Hace 1 día</p>
+                </div>
+                <p class="description-comment">No es el mejor que he escuchado, pero lo recomiendo.</p>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="box-user">
+                <a href="#"><img src="./assets/images/user.png" width="100%"  alt="user"></a>
+            </div>
+            <div class="box-info-user">
+                <div class="name-user">
+                    <h4>Filemón Contreras</h4>
+                    <div class="circle-pink"></div>
+                    <p>Hace 1 día</p>
+                </div>
+                <p class="description-comment">Puntuales y cumplidores, además muy simpáticos, me gustó su estilo.</p>
+            </div>
+        </div>
+        <div class="box-btn-comments">
+            <button class="btn-comments"><i class="fas fa-chevron-down"></i>Leer comentarios</button>
+        </div>
+    </section>
+
+    <footer class="row">
+        <div class="col-lg-2 col-12 d-flex justify-content-center">
+            <a href="./index.html">
+                <img src="./assets/images/uxpowered.png" class="logo-footer">
+            </a>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <ul class="menu-footer">
+                <li><a class="text-white">Derechos Reservados Serenatta 2018</a></li>
+                <li><a href="#">Aviso de privacidad</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <ul class="social-media">
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

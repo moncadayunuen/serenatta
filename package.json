@@ -1,0 +1,19 @@
+{
+  "name": "serenatta",
+  "version": "1.0.0",
+  "description": "layout",
+  "main": "js/app.js",
+  "scripts": {
+    "browser": "browser-sync start --server --files \"*.html, css/**/*.css, js/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7"
+  },
+  "dependencies": {
+    "@chenfengyuan/datepicker": "^1.0.9",
+    "jquery-timepicker": "^1.3.3"
+  }
+}

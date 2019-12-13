@@ -1,0 +1,33 @@
+.main-menu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #242424;
+    padding: 10px 15px;
+}
+.box-btn-header {
+    display: flex;
+}
+.logo {
+    width: 250px;
+    padding: 5px 10px;
+}
+@media (max-width: 768px) {
+    .logo {
+        width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 150px;
+    }
+}
+
+@media (max-width: 380px) {
+    .logo {
+        width: 120px;
+    }
+}
